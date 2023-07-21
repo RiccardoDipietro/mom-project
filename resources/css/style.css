@@ -74,3 +74,17 @@ h1{
 .recensione{
     border-radius: 0px 50px;
 }
+
+.recensioni{
+    overflow: scroll;
+}
+
+.retry{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.fa-arrow-rotate-left{
+    font-size: 50px;
+}

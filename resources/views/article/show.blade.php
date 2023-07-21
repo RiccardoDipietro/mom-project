@@ -21,4 +21,7 @@
             </div>
         </div>
     </div>
+    <a href="{{route('index')}}" class="retry">
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+    </a>
 </x-layout>

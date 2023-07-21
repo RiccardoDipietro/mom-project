@@ -12,20 +12,28 @@
 <div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-12 col-md-10 p-5 shadow receCont">
+
             <div class="recensioni">
+                @foreach ($recensioni as $recensione)
+                @if ($recensione->user_id)
                 <div>
                     <div class="bg-primary p-3 m-4 recensione">
-                        <p class="fs-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nesciunt qui assumenda debitis illum veritatis, fuga veniam! Veritatis consequatur sed labore voluptates praesentium provident, aspernatur voluptatum quis debitis tenetur consequuntur?</p>
+                        <p class="fs-4 text-white">{{$recensione->recensione}}</p>
+                        <div class="d-flex justify-content-start">
+                            <p>{{$recensione->user->name}} - {{$recensione->user->email}}</p>
+                        </div>
                         <div class="d-flex justify-content-end">
+                            @for ($i = 0; $i < $recensione->star; $i++)
                             <i class="fa-solid fa-star fs-3" style="color: #fbff00;"></i>
-                            <i class="fa-solid fa-star fs-3" style="color: #fbff00;"></i>
-                            <i class="fa-solid fa-star fs-3" style="color: #fbff00;"></i>
-                            <i class="fa-solid fa-star fs-3" style="color: #fbff00;"></i>
-                            <i class="fa-solid fa-star fs-3" style="color: #fbff00;"></i>
+                        @endfor
                         </div>
                     </div>
                 </div>
+                @endif
+                @endforeach
+                
             </div>
+
             @auth
             <form class="form-recesioni" action="{{route('storeREC')}}" method="POST">
                 @csrf
