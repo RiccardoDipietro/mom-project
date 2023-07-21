@@ -1,0 +1,76 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+h1{
+    margin-top: 150px;
+}
+
+.mex{
+    z-index: 9999;
+    position: fixed;
+    top: 200px;
+    left: 10px;
+    width: 20%;
+}
+
+.fa-brain{
+    font-size: 70px;
+}
+
+.fa-brain{
+    transition: .4s;
+}
+
+.fa-brain:hover{
+    transform: scale(1.4);
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid black;
+}
+
+.navbar{
+    height: 100px;
+}
+
+.btn-fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.welcome{
+    position: fixed;
+    top: 120px;
+    right: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.receCont{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.form-recesioni{
+    border: 1px solid black;
+    height: 400px;
+    border-radius: 40px 0px;
+}
+
+.star{
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+.recensione{
+    border-radius: 0px 50px;
+}
